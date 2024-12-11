@@ -8,13 +8,13 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "EggTimer",
+    name: "EggTimerParcial",
     platforms: [
         .iOS("16.0")
     ],
     products: [
         .iOSApplication(
-            name: "EggTimer",
+            name: "EggTimerParcial",
             targets: ["AppModule"],
             bundleIdentifier: "com.tads.EggTimer",
             teamIdentifier: "F467FDUSFK",
