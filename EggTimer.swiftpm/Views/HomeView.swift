@@ -12,22 +12,10 @@
 import SwiftUI
 
 struct HomeView: View {
+    
     var body: some View {
-        NavigationStack {
-            
+                    
             // EDITAR A PARTIR DESSA LINHA
-            
-            
-            Constants.backgroundColor
-                .ignoresSafeArea() // Define a cor de fundo ocupando toda a tela e ignorando a Safe Area.
-            
-            
-            // Imagem de fundo decorativa.
-            Image("Background")
-                .resizable()
-                .opacity(0.15)
-                .aspectRatio(contentMode: .fill)
-                .ignoresSafeArea()
             
             
             // Título principal da tela.
@@ -43,15 +31,7 @@ struct HomeView: View {
             Image("egg_soft")
                 .resizable()
                 .frame(width: 110, height: 150)
-            
-            Image("egg_medium")
-                .resizable()
-                .frame(width: 110, height: 150)
-            
-            Image("egg_hard")
-                .resizable()
-                .frame(width: 110, height: 150)
-            
+
             
             // Subtítulo explicativo.
             Text("We help you cook your eggs \njust the way you like them!")
@@ -62,8 +42,8 @@ struct HomeView: View {
             
             
             // Botão que navega para a tela do temporizador (TimerView).
-            NavigationLink(
-                destination: TimerView(),
+            Button(
+                action: {},
                 label: {
                     Text("Start timer")
                         .font(.system(size: Constants.buttonFontSize))
@@ -78,8 +58,6 @@ struct HomeView: View {
             
             // EDITAR SOMENTE ATÉ ESTA LINHA
             
-        }
-        .tint(Constants.fontColor)
     }
 }
 
