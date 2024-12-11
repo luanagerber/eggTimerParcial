@@ -17,17 +17,19 @@ struct HomeViewCompleta: View {
         
         // EDITAR A PARTIR DESSA LINHA
         
-        //         Cor de fundo.
+        
+        // Cor de fundo.
         Constants.backgroundColor
-            .ignoresSafeArea() // Define a cor de fundo ocupando toda a tela e ignorando a Safe Area.
+            .ignoresSafeArea()
         
         
-        //         Imagem de fundo.
+        // Imagem de fundo.
         Image("Background")
             .resizable()
             .opacity(0.15)
             .aspectRatio(contentMode: .fill)
             .ignoresSafeArea()
+        
         
         // Título principal da tela.
         Text("Welcome to \nEgg Timer!")
@@ -52,7 +54,7 @@ struct HomeViewCompleta: View {
             .multilineTextAlignment(.center)
         
         
-        // Botão que navega para a tela do temporizador (TimerView).
+        // Botão.
         Button(
             action: {},
             label: {
@@ -68,7 +70,6 @@ struct HomeViewCompleta: View {
         
         
         // EDITAR SOMENTE ATÉ ESTA LINHA
-        
     }
 }
 

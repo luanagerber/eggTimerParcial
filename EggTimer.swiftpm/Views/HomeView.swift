@@ -27,7 +27,7 @@ struct HomeView: View {
                 .multilineTextAlignment(.center)
             
             
-            // Imagens dos ovos para decorar a interface.
+            // Imagem do ovo.
             Image("egg_soft")
                 .resizable()
                 .frame(width: 110, height: 150)
@@ -41,7 +41,7 @@ struct HomeView: View {
                 .multilineTextAlignment(.center)
             
             
-            // Botão que navega para a tela do temporizador (TimerView).
+            // Botão.
             Button(
                 action: {},
                 label: {
@@ -57,7 +57,6 @@ struct HomeView: View {
             
             
             // EDITAR SOMENTE ATÉ ESTA LINHA
-            
     }
 }
 
