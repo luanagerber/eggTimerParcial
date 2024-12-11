@@ -6,9 +6,6 @@
 //
 
 
-// Para entender melhor como editar esse arquivo: procurar no Figma a seção "Elementos básicos do SwiftUI".
-
-
 import SwiftUI
 
 struct StacksView: View {
