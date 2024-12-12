@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  HomeViewChallenge.swift
 //  EggTimer
 //
 //  Created by Luana Gerber on 04/12/24.
@@ -11,7 +11,7 @@
 
 import SwiftUI
 
-struct HomeViewCompleta: View {
+struct HomeViewChallenge: View {
     
     var body: some View {
         
@@ -45,6 +45,14 @@ struct HomeViewCompleta: View {
             .resizable()
             .frame(width: 110, height: 150)
         
+        Image("egg_medium")
+            .resizable()
+            .frame(width: 110, height: 150)
+        
+        Image("egg_hard")
+            .resizable()
+            .frame(width: 110, height: 150)
+        
         
         // Subtítulo explicativo.
         Text("We help you cook your eggs \njust the way you like them!")
@@ -74,5 +82,5 @@ struct HomeViewCompleta: View {
 }
 
 #Preview {
-    HomeViewCompleta()
+    HomeViewChallenge()
 }
